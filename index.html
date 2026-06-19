@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAMAMON - Digital Monster Idle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="device">
+    <div id="device-top">
+      <div id="device-label">TAMAMON</div>
+      <div id="device-model">DG-V1</div>
+    </div>
+    <div id="screen-frame">
+      <div id="screen-bezel">
+        <div id="game-container"></div>
+      </div>
+    </div>
+    <div id="controls">
+      <div id="btn-row-top">
+        <button id="btn-a" class="device-btn" data-action="feed">
+          <span class="btn-icon">A</span>
+          <span class="btn-label">FEED</span>
+        </button>
+        <button id="btn-b" class="device-btn" data-action="train">
+          <span class="btn-icon">B</span>
+          <span class="btn-label">TRAIN</span>
+        </button>
+        <button id="btn-c" class="device-btn" data-action="upgrade">
+          <span class="btn-icon">C</span>
+          <span class="btn-label">UPGRADES</span>
+        </button>
+      </div>
+    </div>
+    <div id="upgrade-panel" class="hidden">
+      <div id="upgrade-panel-header">
+        <span>UPGRADES</span>
+        <button id="close-upgrades">&times;</button>
+      </div>
+      <div id="upgrade-list"></div>
+    </div>
+    <div id="info-panel">
+      <div id="stats-display"></div>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.3.2/pixi.min.js"></script>
+  <script src="creatures.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
